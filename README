@@ -1,0 +1,25 @@
+ledbanner
+
+This the code and electric diagram for making your own LED 32x8 banner.
+
+On the hardware side, here's what you need:
+  - A Raspberry PI
+  - 3 breadboards
+  - 4 MAX7219 IC: http://www.maximintegrated.com/en/datasheet/index.mvp/id/1339
+  - 4 10000 ohms resistors
+  - 2 or 3 meters of 0.6mm breadboard wire, in different colors.
+  - 5 female/male jumpwires to link to the RaspberryPI GPIOs
+  - A plyer
+
+For the software:
+  - Gordon Henderson's WiringPI library which can be obtained from http://wiringpi.com/ or https://github.com/WiringPi/WiringPi
+        git clone https://github.com/WiringPi/WiringPi
+  - My simple driver for MAX7219 IC: https://github.com/nlannuzel/max7219
+        git clone https://github.com/nlannuzel/max7219
+  - If you want to open the diagram file, you need Fritzing: http://fritzing.org/home/
+
+Compilation:
+  - make ledbanner
+
+Run it:
+  - ledbanner 'Hello World!'
